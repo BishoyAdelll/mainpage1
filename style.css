@@ -1,0 +1,362 @@
+
+:root{
+  --premiumColor:gray;
+  --premiumColors:rgb(61 65 70 / 90%);
+  --fontColor:hsla(197, 81%, 60%, 0.952);
+}
+/*-----global style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+ 
+}
+.color2{
+  background-color: var(--premiumColors);
+}
+a{
+  text-decoration: none;
+  color: var(--premiumColors);
+}
+a:hover{
+  color: var(--fontColor);
+}
+
+/*----- ------------------------------------------End global style */
+/*---------------------------------------------------------second header */
+.transition{
+  animation: sticky-top 1.5s  0s 1  backwards ease-out;
+}
+@keyframes sticky-top{
+  0%{transform: translateY(0px);  opacity: 0;}
+  75%{transform: translateY(1px); opacity: 0.5;}
+  100%{transform: translateY(1px); opacity: 1;}
+}
+.Categories{
+  position: relative;
+}
+.CategoriesTable{
+  position: absolute;
+  background-color: #fff;
+  top: 38px;
+  left: 0px;
+  width: 250px;
+  line-height: 40px;
+  font-weight: 600;
+  display: none;
+}
+.Home{
+  position: relative;
+}
+.HomeTable{
+  position: absolute;
+  background-color: #fff;
+  top: 37px;
+  left: 520;
+  width: 250px;
+  line-height: 40px;
+  font-weight: 600;
+  display: none;
+}
+.Courses{
+  position: relative;
+}
+.CoursesTable{
+  position: absolute;
+  background-color: #fff;
+  top: 38px;
+  left: -6px;
+  width: 250px;
+  line-height: 50px;
+  font-weight: 600;
+  display: none;
+}
+.Pages{
+  position: relative;
+}
+.PagesTable{
+  position: absolute;
+  background-color: #fff;
+  top: 36px;
+  left: -16px;
+  width: 250px;
+  line-height: 50px;
+  font-weight: 600;
+  display: none;
+}
+.Layout{
+  position: relative;
+}
+.SingleTable{
+  position: absolute;
+  background-color: #fff;
+  top: 249px;
+  left: 250px;
+  width: 250px;
+  line-height: 50px;
+  font-weight: 600;
+  display: none;
+}
+.Blog{
+  position: relative;
+}
+.BlogTable{
+  position: absolute;
+  background-color: #fff;
+  top: 37px;
+  left: 0px;
+  width: 250px;
+  line-height: 50px;
+  font-weight: 600;
+  display: none;
+}
+ .Pages:hover .PagesTable{
+  display: block;
+}
+ .Blog:hover .BlogTable{
+  display: block;
+}
+ .Home:hover .HomeTable{
+  display: block;
+}
+ .Courses:hover .CoursesTable{
+  display: block;
+}
+ .Categories:hover .CategoriesTable{
+  display: block;
+}
+.CoursesTable ul li:last-child:hover .SingleTable{
+  display: block;
+}
+
+.searchInput{
+  position: relative;
+  
+}
+.searchInput input{
+  outline: none;
+  height: 45px;
+  background-color: #ecf0f5;
+}
+.searchIcon{
+  position: absolute;
+  top: 14px;
+  right: 34px;
+  color: #8698ac;
+}
+
+.hover{
+  position: relative;
+}
+.hover::before{
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  left: 0;
+  height: 10px;
+  width: 0;
+  border-bottom: 2px solid #fff;
+  transition: 0.4s ease-in-out;
+}
+.hover:hover::before{
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  left: 0;
+  height: 10px;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+}
+.angle{
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  border: none;
+}
+.angle:hover{
+  background-color: #576b7b;
+}
+.hoverColor:hover{
+  background-color: var(--fontColor);
+  
+}
+
+.card_width{
+  position: relative !important;
+}
+.card_width img{
+  height: 248px;
+}
+.price{
+  margin-top:-40px ;
+}
+.dash{
+  transition: 0.5s;
+}
+.dash:hover{
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 20px rgb(187, 182, 182);
+}
+.card-hover{
+  position: absolute;
+  width: calc(100% - 20px);
+  height: 100%;
+  background-color: #ffffff;
+  top: 0px;
+  left:10px;
+  color: #000000;
+}
+.card-hover img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.sectionHeight{
+  background-color: #e2e8ec;
+  padding: 50px 0px;
+}
+.icons{
+  background-color: #8698ac;
+  border-radius: 15px;
+  padding: 20px 0px 20px 0px ;
+  position: relative;
+  
+}
+.image-icon{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: #ecf0f5;
+  padding: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+}
+.image-icon img{
+  width: 45px;
+  height: 45px;
+  padding-top: 5px;
+}
+.icons::before{
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color:#F14D5D;
+  left: 5px;
+  top:5px;
+  border: 4px solid #F14D5D;
+  border-top-left-radius: 10px;
+  opacity: 0;
+  transition: transform 2s;
+  
+}
+.icons:hover::before{
+  left: 0px;
+  top:0px;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.icons:hover{
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  color: #000000;
+}
+.video::before{
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background: #120F2D;
+    opacity: .6;
+}
+.width2{
+  width: 80px;
+}
+.controller2{
+  position: relative;
+  top: 110px;
+  background-color: rgb(47, 53, 59);
+  
+}
+.controller2::after{
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url(illustration-bg.png) 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  z-index:1;
+
+}
+.animation1{
+   opacity: 0;
+   transition:  0.5s;
+   transform-origin: center;
+   transform: scale(0);
+}
+
+.animation2:hover .animation1{
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+.color1{
+ 
+  background-color: #e72271 ;
+}
+.color3{ 
+  background-color: #07e9cb; 
+}
+.color4 {
+  background: #1177fc;
+}
+.color5 {
+  background: #a707e6;
+}
+.color6 {
+  background: #fa9819;
+}
+.team{
+  position: relative;
+  
+}
+.imaeg{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  position: relative;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.team2{
+  position: absolute;
+  top:-100px;
+  right: -5px;
+  opacity: 0;
+  transition:  0.5s;
+   transform-origin: right;
+}
+.color7:hover .team2{
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  right: 10px;
+}
+.color7{
+  border: 1px solid rgb(196, 193, 193);
+}
